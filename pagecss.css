@@ -258,7 +258,7 @@ div>img {
 
 #contactus::before {
     content: "";
-    background: url(./img/new3.jpg) no-repeat center center/cover;
+    background: url(./Img/new3.jpg) no-repeat center center/cover;
     position: absolute;
     top: 0px;
     right: 0px;

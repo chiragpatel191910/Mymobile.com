@@ -1,0 +1,205 @@
+
+/* CSS Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* navbar section */
+
+#navbar{
+    display: block;
+    height: 65px;
+}
+
+#navbar .namelogo{
+    margin:auto;
+    padding-top: 5px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+#navbar ul{
+    margin: 5px;
+}
+
+#navbar ul a{
+    font-size: 15px;
+    padding: 0px 5px;
+    margin: 0px;
+}
+
+#navbar .Searchbtn{
+    display: none;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    height: 15px;
+    width: 60px;
+    margin: 5px 10px;
+    font-size: 10px;
+    color: black;
+}
+
+#navbar .searchbtn ::placeholder {
+    color: black;
+}
+
+/* home section */
+
+#home{
+    height: auto;
+}
+
+#home h1 {
+    font-size: 2.5rem;
+    margin: 0px 0px;
+    margin-top: 75px;
+    font-family: 'Handlee', cursive;
+}
+
+#home p {
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 70px 10px;
+}
+
+
+
+/* product section */
+
+#products {
+    height: auto;
+}
+    
+
+.box-container {
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 60px;
+    /* margin: 60px 0px; */
+}
+
+.boxes {
+    height: 200px;
+    width: 200px;
+    margin: 25px 20px;
+}
+
+.boxes:hover {
+    transform: scale(1.15);
+}
+
+div>img {
+    height: 100px;
+    width: 150px;
+    margin: 18px 25px;
+    border-radius: 10px;
+}
+
+.itemname{
+    font-size: 18px;
+}
+
+.btn {
+    padding: 3px 3px;
+    font-size: 8px;
+    margin: 5px 67px;
+    width: 65px;
+}
+
+
+/* brand section */
+
+#brands{
+    height: auto;
+}
+
+.brandname{
+    font-size: 1.5rem;
+    color: black;
+    font-weight: bold;
+}
+
+.brands-container {
+    flex-wrap: wrap;
+    height: auto;
+}
+
+.brandboxes img {
+    height: 150px;
+    width: 150px;
+}
+
+/* contact us section */
+
+#contactus{
+    height: auto;
+}
+
+.form-container {
+    margin: 0px;
+}
+
+.form-container input{
+    height: 15px;
+    width: 275px;
+    margin: 5px 10px;
+    font-size: 15px;
+}
+
+.form-container .b{
+    height: 25px;
+    width: 100px;
+    font-size: 13px;
+}
+
+/* about us section */
+
+#aboutus{
+    height: auto;
+}
+
+#aboutus .about-container{
+    height: 320px;
+    width: auto;
+    font-size: 1.3rem;
+}
+
+/* Utility Function */
+
+.h-primary{
+    top: 35px;
+    width: 55%;
+    font-size: 22px;
+}
+
+@media only screen and (min-width:0px) and (max-width:425px) {
+    .h-primary{
+        top: 35px;
+        width: 50%;
+        font-size: 22px;
+    }
+}
+@media only screen and (min-width:426px) and (max-width:900px) {
+    .h-primary{
+        top: 35px;
+        width: 25%;
+        font-size: 22px;
+    }
+}
+
+@media only screen and (min-width:901px) and (max-width:2730px) {
+    .h-primary{
+        top: 35px;
+        width: 15%;
+        font-size: 22px;
+    }
+}

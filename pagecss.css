@@ -1,0 +1,386 @@
+/* CSS Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+
+:root {
+    --primarry-color: red;
+}
+
+/* Navbar */
+
+#navbar {
+    display: flex;
+    position: sticky;
+    background-color: #b566d2e6;
+    height: 75px;
+    width: 100%;
+}
+
+/* Namelogo */
+
+.namelogo {
+    color: navy;
+    font-weight: bolder;
+    font-family: 'Cinzel', serif;
+    margin: 23px 25px;
+    font-size: 1.5rem;
+}
+
+/* navmenu */
+
+#navmenu {
+    width: 100%;
+}
+
+#navmenu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    margin: 25px 0px;
+}
+
+#navmenu ul a {
+    color: black;
+    font-size: 1.6rem;
+    /* font-family: 'Labrada', serif; */
+    font-family: 'Handlee', cursive;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 0px 20px;
+    cursor: pointer;
+    transition: background-color 0.8s ease 0s;
+}
+
+#navbar ul a:hover {
+    background-color: #98FF98;
+    color: #0000FF;
+}
+
+#navbar .Searchbtn {
+    font-family: 'Handlee', cursive;
+    height: 30px;
+    width: 180px;
+    /* border: 2px solid rgba(0, 0, 0, 0.17); */
+    border: none;
+    border-radius: 10px;
+    background-color: #b39ddb;
+    margin: 23px 20px;
+    padding-left: 15px;
+    color: #98FF98;
+    font-weight: bold;
+}
+
+.Searchbtn:hover {
+    cursor: pointer;
+}
+
+/* Home Section */
+
+#home {
+    position: relative;
+    /* border: 2px solid black; */
+    height: 712px;
+    width: 100%;
+}
+
+#home::before {
+    content: "";
+    background: url(./Img/new3.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#home h1 {
+    color: black;
+    font-size: 4.5rem;
+    margin: 0px 30px;
+    margin-top: 120px;
+    font-family: 'Labrada', serif;
+}
+
+#home p {
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 80px 196px;
+    padding: 10px;
+    color: black;
+    font-family: 'Handlee', cursive;
+}
+
+/* products section */
+
+#products {
+    height: 720px;
+    width: 100%;
+    position: relative;
+}
+
+#products::before {
+    content: "";
+    background: url(./Img/new3.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 100px 0px; */
+    margin-top: 60px;
+}
+
+.boxes {
+    height: 350px;
+    width: 350px;
+    background-color: #da70d6ce;
+    margin: 80px 50px;
+    border-radius: 30px;
+    transition: all 0.5s ease 0s;
+    /* border: 2px solid red; */
+}
+
+.boxes:hover {
+    transform: scale(1.2);
+}
+
+div>img {
+    height: 200px;
+    width: 300px;
+    margin: 25px 25px;
+    border-radius: 10px;
+}
+
+.itemname{
+    text-align: center;
+    font-size: 30px;
+}
+
+.btn {
+    color: aqua;
+    background-color: black;
+    padding: 5px 30px;
+    margin: 10px 110px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: red;
+}
+
+/*Brands Section*/
+
+#brands {
+    height: 713px;
+    width: 100%;
+    position: relative;
+}
+
+#brands::before {
+    content: "";
+    background: url(./Img/new3.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    right: 0px;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.brands-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 100px 0px; */
+    margin-top: 60px;
+    height: 450px;
+    /* flex-wrap: wrap; */
+}
+
+.brandboxes img {
+    height: 250px;
+    width: 250px;
+    border-radius: 25px;
+    margin: 0px 25px;
+    box-shadow: 0px 0px 5px black;
+}
+
+.brandname {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin: 5px 30px;
+    border-radius: 15px;
+    color: white;
+    font-family: 'Labrada', serif;
+    /* background-color: rgba(0, 0, 0, 0.325); */
+}
+
+#contactus {
+    height: 713px;
+    width : 100%;
+    position: relative;
+    /* padding: 50px 0px; */
+}
+
+#contactus::before {
+    content: "";
+    background: url(./img/new3.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 75px;
+    padding: 50px;
+    /* border: 2px solid red; */
+}
+
+.form-container input {
+    font-size: 20px;
+    height: 30px;
+    width: 650px;
+    margin: 10px 20px;
+    padding: 5px;
+    border: 2px solid black;
+    /* background-color: rebeccapurple; */
+    background-color: #e38aae5c;
+    color: #98FF98;
+    border-radius: 15px;
+    text-align: center;
+}
+
+::placeholder {
+    color: #98ff98da;
+    font-family: 'Handlee', cursive;
+    font-weight: bold;
+}
+
+.form-container .b {
+    color: #98FF98;
+    font-weight: bold;
+    background-color: rgba(255, 182, 193, 0.349);
+    border: 2px solid black;
+    text-align: center;
+    font-size: 16px;
+    height: 35px;
+    width: 175px;
+    margin: 0px 5px;
+    border-radius: 15px;
+    font-family: 'Handlee', cursive;
+}
+
+.newp {
+    text-align: center;
+    margin: 12px 0px;
+}
+
+.b:hover {
+    cursor: pointer;
+}
+
+#aboutus {
+    height: 713px;
+    width: 100%;
+    position: relative;
+}
+
+#aboutus::before {
+    content: "";
+    background: url(./Img/new3.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+
+#aboutus .about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 600px;
+    width: 100%;
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 23px 0px;
+    font-family: 'Handlee', cursive;
+    /* background-color: #b39ddb;  */
+}
+
+
+
+
+/*Utility Classes*/
+
+.center {
+    text-align: center;
+}
+
+.h-primary {
+    position: relative;
+    top: 65px;
+    font-size: 50px;
+    margin: auto;
+    color: #F67280; 
+    background-color: rgba(0, 0, 0, 0.67);
+    width: 22.5%;
+    border-radius: 25px;
+    /* font-family: 'Handlee', cursive; */
+    font-family: 'Cinzel', serif;
+}
+
+footer{
+    text-align: center;
+    background:black;
+    color: white;
+    padding: 10px;
+}
+

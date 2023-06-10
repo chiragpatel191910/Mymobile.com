@@ -188,7 +188,7 @@ div>img {
         font-size: 22px;
     }
 }
-@media only screen and (min-width:426px) and (max-width:900px) {
+@media only screen and (min-width:426px) and (max-width:980px) {
     .h-primary{
         top: 35px;
         width: 25%;
@@ -196,7 +196,7 @@ div>img {
     }
 }
 
-@media only screen and (min-width:901px) and (max-width:2730px) {
+@media only screen and (min-width:981px) and (max-width:2730px) {
     .h-primary{
         top: 35px;
         width: 15%;

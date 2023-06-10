@@ -136,7 +136,7 @@ html {
 /* products section */
 
 #products {
-    height: 720px;
+    height: auto;
     width: 100%;
     position: relative;
 }
@@ -155,10 +155,12 @@ html {
 
 .box-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     /* margin: 100px 0px; */
     margin-top: 60px;
+    padding: 38px;
 }
 
 .boxes {
@@ -182,7 +184,7 @@ div>img {
     border-radius: 10px;
 }
 
-.itemname{
+.itemname {
     text-align: center;
     font-size: 30px;
 }
@@ -204,7 +206,7 @@ div>img {
 /*Brands Section*/
 
 #brands {
-    height: 713px;
+    height: auto;
     width: 100%;
     position: relative;
 }
@@ -223,12 +225,12 @@ div>img {
 
 .brands-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    /* margin: 100px 0px; */
-    margin-top: 60px;
-    height: 450px;
-    /* flex-wrap: wrap; */
+    padding-bottom: 155px;
+    margin-top: 175px;
+    height: auto;
 }
 
 .brandboxes img {
@@ -251,7 +253,7 @@ div>img {
 
 #contactus {
     height: 713px;
-    width : 100%;
+    width: 100%;
     position: relative;
     /* padding: 50px 0px; */
 }
@@ -369,18 +371,17 @@ div>img {
     top: 65px;
     font-size: 50px;
     margin: auto;
-    color: #F67280; 
+    color: #F67280;
     background-color: rgba(0, 0, 0, 0.67);
-    width: 22.5%;
+    width: 28.5%;
     border-radius: 25px;
     /* font-family: 'Handlee', cursive; */
     font-family: 'Cinzel', serif;
 }
 
-footer{
+footer {
     text-align: center;
-    background:black;
+    background: black;
     color: white;
     padding: 10px;
 }
-
